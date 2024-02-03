@@ -1,0 +1,13 @@
+.root {
+    margin: calc(-1em / 2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .root {
+        flex-direction: column;
+    }
+}

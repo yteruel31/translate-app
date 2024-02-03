@@ -1,11 +1,11 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import checker from "vite-plugin-checker";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import checker from 'vite-plugin-checker';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    host: "localhost",
+    host: 'localhost',
     open: true,
   },
   plugins: [
@@ -13,7 +13,7 @@ export default defineConfig({
     checker({
       typescript: true,
       eslint: {
-        lintCommand: "eslint --ext js,ts,tsx src",
+        lintCommand: 'eslint --ext js,ts,tsx src',
       },
     }),
   ],

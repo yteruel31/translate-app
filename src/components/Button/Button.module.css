@@ -1,0 +1,80 @@
+.base {
+    -webkit-tap-highlight-color: transparent;
+    appearance: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    touch-action: manipulation;
+    user-select: none;
+    background: transparent;
+    border-radius: var(--radius);
+    border: 2px solid transparent;
+    font-weight: 600;
+}
+
+.primary {
+    composes: base;
+    background-color: var(--color-primary-500);
+    border-color: var(--color-primary-400);
+    color: var(--color-text-light-10);
+}
+
+.primary:hover {
+    background-color: var(--color-primary-400);
+}
+
+.secondary {
+    composes: base;
+    color: var(--color-background-500);
+}
+
+.secondary:active {
+    background-color: var(--color-background-500);
+    color: var(--color-text-light-10);
+}
+
+.small {
+    composes: base;
+    padding: 0.3em 1.1em;
+}
+
+.medium {
+    composes: base;
+    padding: 0.9em 1.8em;
+}
+
+.medium-primary {
+    composes: medium primary;
+}
+
+.small-primary {
+    composes: small primary;
+}
+
+.medium-secondary {
+    composes: medium secondary;
+}
+
+.small-secondary {
+    composes: small secondary;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    height: 100%;
+    gap: 0.4em;
+}
+
+.label {
+    white-space: nowrap;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}

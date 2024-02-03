@@ -1,0 +1,11 @@
+.root {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid var(--color-background-500);
+    border-radius: var(--radius);
+    width: 2.7em;
+    height: 2.7em;
+    cursor: pointer;
+}

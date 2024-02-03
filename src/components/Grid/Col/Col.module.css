@@ -1,0 +1,15 @@
+.root {
+    box-sizing: border-box;
+    padding: 1em;
+    flex-shrink: 0;
+    max-width: 100%;
+    width: 50%;
+    flex-grow: 1;
+}
+
+
+@media (max-width: 768px) {
+    .root {
+        width: 100%;
+    }
+}

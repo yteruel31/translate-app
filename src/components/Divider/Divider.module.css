@@ -1,0 +1,7 @@
+.root {
+    border: 0;
+    border-top-width: 2px;
+    border-top-color: var(--color-background-500);
+    border-top-style: solid;
+    margin: 0;
+}

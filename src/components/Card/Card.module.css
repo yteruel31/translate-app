@@ -1,0 +1,8 @@
+.root {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background-color: var(--color-secondary-500);
+    border: 2px solid var(--color-background-500);
+    padding: 1.5em;
+}
